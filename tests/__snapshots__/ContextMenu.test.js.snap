@@ -12,6 +12,7 @@ exports[`ContextMenu tests does not shows when event with incorrect "id" is trig
   preventHideOnContextMenu={false}
   preventHideOnResize={false}
   preventHideOnScroll={false}
+  preventKeyNavigation={false}
   rtl={false}
   style={Object {}}
 >
@@ -44,6 +45,7 @@ exports[`ContextMenu tests does not shows when event with incorrect "id" is trig
   preventHideOnContextMenu={false}
   preventHideOnResize={false}
   preventHideOnScroll={false}
+  preventKeyNavigation={false}
   rtl={false}
   style={Object {}}
 >
@@ -76,6 +78,7 @@ exports[`ContextMenu tests shows when event with correct "id" is triggered 1`] =
   preventHideOnContextMenu={false}
   preventHideOnResize={false}
   preventHideOnScroll={false}
+  preventKeyNavigation={false}
   rtl={false}
   style={Object {}}
 >
@@ -108,6 +111,7 @@ exports[`ContextMenu tests shows when event with correct "id" is triggered 2`] =
   preventHideOnContextMenu={false}
   preventHideOnResize={false}
   preventHideOnScroll={false}
+  preventKeyNavigation={false}
   rtl={false}
   style={Object {}}
 >

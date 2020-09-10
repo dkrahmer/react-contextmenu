@@ -21,6 +21,7 @@ export default class ContextMenu extends AbstractMenu {
         onMouseLeave: PropTypes.func,
         onShow: PropTypes.func,
         preventHideOnContextMenu: PropTypes.bool,
+        preventKeyNavigation: PropTypes.bool,
         preventHideOnResize: PropTypes.bool,
         preventHideOnScroll: PropTypes.bool,
         style: PropTypes.object
@@ -35,6 +36,7 @@ export default class ContextMenu extends AbstractMenu {
         onMouseLeave() { return null; },
         onShow() { return null; },
         preventHideOnContextMenu: false,
+        preventKeyNavigation: false,
         preventHideOnResize: false,
         preventHideOnScroll: false,
         style: {}
@@ -98,7 +100,7 @@ export default class ContextMenu extends AbstractMenu {
         document.addEventListener('touchstart', this.handleOutsideClick);
         if (!this.props.preventHideOnScroll) document.addEventListener('scroll', this.handleHide);
         if (!this.props.preventHideOnContextMenu) document.addEventListener('contextmenu', this.handleHide);
-        document.addEventListener('keydown', this.handleKeyNavigation);
+        if (!this.props.preventKeyNavigation) document.addEventListener('keydown', this.handleKeyNavigation);
         if (!this.props.preventHideOnResize) window.addEventListener('resize', this.handleHide);
     }
 
